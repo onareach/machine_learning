@@ -27,6 +27,76 @@ Instead of writing rules manually, we supply a program with thousands of pre-lab
 
 **Glossary**
 
+**Linear Classification**
+
+Linear classification is the process of finding a straight line that separates one category from another. Imagine you have a thousand pictures of handwritten "1s" and "0s." The **1s** tend to be tall and thin, while **0s** are both tall and wide.
+
+If you plot their relative **widths** and **heights** on an X-Y grid, the points representing **1s** will cluster lower on the X-axis (narrower widths), while the **0s** will cluster higher (wider widths). You’ll be able to draw a **vertical line** between the two groups. Any new point **falling to the left** of the line is probably a **1**, while any point **falling to the right** is probably a **0**. This **dividing line** is what gives **linear classification** its name.
+
+Sometimes, data points form clear groups but **aren’t separated in a straight-line pattern**. In such cases, it may be possible to **transform or re-graph the data** so that a line (or a plane in higher dimensions) can still be used to classify them.
+
+Linear Classification: Separating 1s and 0s by Width
+
+
+
+![Output image](https://files.oaiusercontent.com/file-Q9YzVQJib2CzqTfjn2SGjS?se=2025-03-15T23%3A46%3A45Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De013a6d0-80af-4ae6-91c5-d480cc17d664&sig=mOxbp%2B%2Bk2kfdEx0PE4kXnxSKaG2zjKMGVTYxboCb8bk%3D)
+
+Here is an illustration of **linear classification** using a simple example of handwritten **1s** and **0s**.
+
+- **Blue dots** represent **1s** (which tend to be tall and thin).
+- **Red dots** represent **0s** (which tend to be tall and wide).
+- The **black dashed line** represents the **decision boundary**, separating the two groups.
+
+Any new data point that falls to the **left** of the line is classified as a **1**, and any point to the **right** is classified as a **0**. This is the core idea behind **linear classification**—using a simple **straight line** to separate two categories based on their features.
+
+
+
+**Non-Linearly Separable Data: Center vs. Perimeter**
+
+
+
+![Output image](https://files.oaiusercontent.com/file-WPwW6KCMVvmdxAkzi7y3At?se=2025-03-15T23%3A48%3A19Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Def7b5746-7ac1-4fdb-a300-146c5f34df57&sig=N5OFe2ugkjS0gN%2B/nR56Ae3DDUmg6EUjOc9no/oe3MU%3D)
+
+Here is an illustration of a **non-linearly separable dataset**, where one cluster is in the **center** (blue dots, Class A) and another cluster is arranged in a **circular perimeter** around it (red dots, Class B).
+
+### **Why is this a problem for linear classification?**
+
+- A **straight line** cannot cleanly separate the two groups.
+- Any attempt to draw a line will misclassify some points in both classes.
+
+### **How Can We Solve This?**
+
+1. **Feature Transformation**: Instead of using **X and Y** coordinates directly, we could use **distance from the center** as a feature. This would make it easier to separate the two classes using a **threshold** rather than a line.
+2. **Non-Linear Classifiers**: Methods like **decision trees**, **neural networks**, or **kernel-based support vector machines (SVMs)** can model more complex boundaries.
+
+
+
+**Feature Transformation: Making Data Linearly Separable**
+
+
+
+![Output image](https://files.oaiusercontent.com/file-RGp7P4RMsFBxoJXs6KzMB2?se=2025-03-15T23%3A49%3A11Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D420534fe-b7e7-4358-9f98-9870633a0956&sig=M4MJon9JMxnEG%2BXhFje5rHpv37ckc/vHE82ag32cB8Y%3D)
+
+Here is an illustration of how **feature transformation** can make the problem **linearly separable**:
+
+### **What Changed?**
+
+- Instead of plotting the **X and Y coordinates**, we transformed the data by computing the **distance from the center**.
+- Now, instead of a **circle vs. center problem**, we have a **one-dimensional separation** based on distance.
+
+### **How Does This Help?**
+
+- The **center points (Class A, blue)** have **small distances** from the origin.
+- The **perimeter points (Class B, red)** have **larger distances**.
+- A simple **vertical line (decision boundary at ~1.5)** can now **perfectly separate the two classes**.
+
+### **Key Takeaway**
+
+👉 **Linear classification works best when the data is arranged in a way that allows for a straight-line decision boundary.**
+ 👉 **Feature transformation (like computing distance) can reshape data into a form where linear classification is possible.**
+
+
+
 **Machine Learning:** Electronic Pattern Finder
 
 **Model**: Algorithm
