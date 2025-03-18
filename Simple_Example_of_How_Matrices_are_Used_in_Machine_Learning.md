@@ -20,11 +20,9 @@ Each hour of study is worth 3 points.
 
 Each hour of sleep is worth 1 point.
 
+## How the Model Works (Matrix Multiplication)
 
-
-#### How the Model Works (Matrix Multiplication)
-
-We represent the students' data as a matrix **X**:
+We represent the students' data as a **matrix** $X$:
 
 $$
 X =
@@ -35,18 +33,18 @@ X =
 \end{bmatrix}
 $$
 
+We represent the **weights** (influence of study and sleep) as another **matrix** $W$:
 
-We represent the weights (influence of study and sleep) as another matrix **W**:
 $$
-X =
+W =
 \begin{bmatrix}
 3 \\
 1
 \end{bmatrix}
 $$
 
-
 To make predictions, we multiply these matrices:
+
 $$
 X \times W =
 \begin{bmatrix}
@@ -61,9 +59,8 @@ X \times W =
 27
 \end{bmatrix}
 $$
-This gives the predictors scores for each student.
 
-
+This gives the **predicted scores** for each student.
 
 #### Why Is This Important?
 
