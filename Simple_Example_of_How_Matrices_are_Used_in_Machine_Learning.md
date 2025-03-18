@@ -45,24 +45,11 @@ $$
 
 To make predictions, we multiply these matrices:
 
-$$
-X \times W =
-\begin{bmatrix}
-(2 \times 3) + (7 \times 1) \\
-(5 \times 3) + (5 \times 1) \\
-(8 \times 3) + (3 \times 1)
-\end{bmatrix}
-=
-\begin{bmatrix}
-13 \\
-20 \\
-27
-\end{bmatrix}
-$$
+![ml_image_1](/images/ml_image_1.png)
 
 This gives the **predicted scores** for each student.
 
-#### Why Is This Important?
+#### Why Is This Important?ml
 
 - All ML models use matrices to **store** and **process data**.
 - Neural networks (so-called) are just big stacks of matrix multiplications.
