@@ -47,7 +47,6 @@ $$
 
 
 To make predictions, we multiply these matrices:
-
 $$
 X \times W =
 \begin{bmatrix}
@@ -62,9 +61,6 @@ X \times W =
 27
 \end{bmatrix}
 $$
-
-
-
 This gives the predictors scores for each student.
 
 
@@ -249,6 +245,8 @@ First, we'll use a simple approach.
     2              8            3            26                     26.5
 
 
+
+The following is a high-precision approach to the same calculation:
 
 ##### 4.  Create a file called ml.py in the venv with the following code:
 

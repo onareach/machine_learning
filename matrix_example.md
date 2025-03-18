@@ -139,3 +139,21 @@ This works in **Markdown editors that support LaTeX**, such as:
 - Obsidian
 - Some static site generators (like MkDocs)
 
+
+
+To make predictions, we multiply these matrices:
+
+$$
+X \times W =
+\begin{bmatrix}
+(2 \times 3) + (7 \times 1) \\
+(5 \times 3) + (5 \times 1) \\
+(8 \times 3) + (3 \times 1)
+\end{bmatrix}
+=
+\begin{bmatrix}
+13 \\
+20 \\
+27
+\end{bmatrix}
+$$
